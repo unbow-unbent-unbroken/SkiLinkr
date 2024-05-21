@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SkiLinkr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="icon" href="images/171454_link_icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="images/logo-no-background.png" alt="SkiLinkr Logo">
+        </div>
+        <div class="auth-buttons">
+            <button type="button" id="loginBtn">Login</button>
+            <button type="button" id="signupBtn">Signup</button>
+        </div>
+    </header>
+    <div class="container1">
+        <div class="headline">Bridging the gap between talent and opportunity!</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="container2">
+        <h2>Included Services</h2>
+        <div class="services">
+            <div class="service-item">
+                <div class="image_container">
+                    <img src="./images/pexels-pixabay-73833.jpg" alt="Service 1">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur nihil alias. Perspiciatis autem aliquid velit suscipit, iure id corrupti voluptatem fugit ipsa consequatur quisquam tempore facere esse. Soluta, dolorum.</p>
+            </div>
+            <div class="service-item">
+                <div class="image_container">
+                    <img src="./images/pexels-kindelmedia-9875411.jpg" alt="Service 2">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero in, possimus maxime modi distinctio rem at! Corrupti cupiditate animi placeat repellendus aspernatur? Dolorum expedita odio animi repellendus ducimus dolores. Sit.</p>
+            </div>
+            <div class="service-item">
+                <div class="image_container">
+                    <img src="./images/pexels-chevanon-1108101.jpg" alt="Service 3">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam iure molestias, itaque ea optio totam at! Aspernatur placeat, aliquid officia inventore illum, molestias expedita quas culpa, laborum repellendus debitis!</p>
+            </div>
+            <div class="service-item">
+                <div class="image_container">
+                    <img src="./images/pexels-anilkarakaya-6419128.jpg" alt="Service 4">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero in, possimus maxime modi distinctio rem at! Corrupti cupiditate animi placeat repellendus aspernatur? Dolorum expedita odio animi repellendus ducimus dolores. Sit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <h2>Showcase Your Skills</h2>
+        <div class="content">
+            <div>
+                <h3>Create a Winning Profile</h3>
+                <p>Highlight your unique talents, certifications, and work samples to attract potential clients.</p>
+            </div>
+            <div>
+                <h3>Create a Winning Profile</h3>
+                <p>Highlight your unique talents, certifications, and work samples to attract potential clients.</p>
+            </div>
+            <div>
+                <h3>Create a Winning Profile</h3>
+                <p>Highlight your unique talents, certifications, and work samples to attract potential clients.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="center-box">
+            <h2>Connect with Clients</h2>
+            <div class="content2">
+                <div>
+                    <h3>Create a Winning Profile</h3>
+                    <p>Highlight your unique talents, certifications, and work samples to attract potential clients.</p>
+                </div>
+                <div>
+                    <h3>Create a Winning Profile</h3>
+                    <p>Highlight your unique talents, certifications, and work samples to attract potential clients.</p>
+                </div>
+                <div>
+                    <h3>Create a Winning Profile</h3>
+                    <p>Highlight your unique talents, certifications, and work samples to attract potential clients.</p>
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="button" id="signupBtn">Join us</button>
+                <button type="button" id="loginBtn">Login</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="container5">
+        <h2>Pricing and Services</h2>
+        <div class="content3">
+            <div>
+                <h3>Competitive Rates</h3>
+                <p>Offer your services at fair and transparent rates that reflect your skills and experience.</p>
+            </div>
+            <div>
+                <h3>Diverse Services</h3>
+                <p>Showcase a range of services, from routine maintenance to specialized project work.</p>
+            </div>
+            <div>
+                <h3>Customizable Packages</h3>
+                <p>Tailor your offerings to meet the unique needs of each client and project.</p>
+            </div>
+            <div>
+                <h3>Satisfaction Guaranteed</h3>
+                <p>Provide high-quality work and excellent customer service to ensure client satisfaction.</p>
+            </div>
+        </div>
+    </div>
+
+   <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <label for="newUsername">Username</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newEmail">Email</label>
+            <input type="text" id="newEmail" name="newEmail" required>
+            <label for="newPassword">Password</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+</div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/modal.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About SkiLinkr</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur, neque nec feugiat fermentum, leo odio bibendum mauris, ut ultrices justo lectus ac elit.</p>
+            <div class="contact">
+                <span><i class="fa fa-envelope"></i> skilinkr@example.com</span>
+                <span><i class="fa fa-phone"></i> +1234567890</span>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-form">
+            <h3>Contact Us</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
+                <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn-big contact-btn">
+                    <i class="fa fa-envelope"></i>
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; <span id="currentYear"></span> SkiLinkr | Mavis, Shumani & Shonisani
+    </div>
+</footer>
+</html>

@@ -1,37 +1,38 @@
 header {
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     background-color: #f2ebdf;
     height: 68px;
-    border-bottom: 1px #c2c2c2 solid;
+    padding: 0 20px;
+    border-bottom: 1px solid #c2c2c2;
 }
+
 .logo {
     width: 142px;
     height: 60px;
-    padding-left: 20px;
 }
-.logo img{
-    padding-top: 20px;
+
+.logo img {
     width: 100%;
+    height: auto;
 }
-header input {
-    margin-left: 35px;
-    margin-top: 15px;
-    height: 35px;
-    width: 50%;
-    font-size: larger;
-    padding-left: 10px;
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
 }
+
 header button {
     height: 37px;
-    margin-top: 15px;
-    width: 84px;
     background-color: #1b1b1b;
     color: #f2ebdf;
     font-size: large;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
-header button:hover{
+
+header button:hover {
     background-color: #5f5e5e;
 }
