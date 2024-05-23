@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const signupModal = document.getElementById("signupModal");
     const loginBtn = document.getElementById("loginBtn");
     const signupBtn = document.getElementById("signupBtn");
+    const joinusBtn = document.getElementById("joinusBtn");
     const closeBtns = document.querySelectorAll(".close");
 
     loginBtn.onclick = () => {
@@ -10,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     signupBtn.onclick = () => {
+        signupModal.style.display = "block";
+    };
+
+    joinusBtn.onclick = () => {
         signupModal.style.display = "block";
     };
 
@@ -34,4 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update the content of the span element with the current year
     document.getElementById('currentYear').textContent = currentYear;
+
+     // Event listeners for social signup buttons
+     document.getElementById("googleSignupBtn").onclick = () => {
+        // Add Google signup logic here
+        alert("Google Signup clicked");
+    };
+
+    document.getElementById("facebookSignupBtn").onclick = () => {
+        // Add Facebook signup logic here
+        alert("Facebook Signup clicked");
+    };
 });

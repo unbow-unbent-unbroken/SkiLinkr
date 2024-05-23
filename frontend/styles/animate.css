@@ -1,0 +1,131 @@
+/* Animation for headline */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#animatedHeadline {
+    animation: fadeInUp 19s ease-out infinite;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#animatedHeadline {
+    animation: fadeInScale 1s ease-out;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#animatedHeadline {
+    animation: slideInLeft 1s ease-out;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#animatedHeadline {
+    animation: bounceIn 1s ease-out;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-200deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+#animatedHeadline {
+    animation: rotateIn 1s ease-out;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#animatedHeadline {
+    animation: zoomIn 1s ease-out;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+@keyframes flipIn {
+    from {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+#animatedHeadline {
+    animation: flipIn 1s ease-out;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}

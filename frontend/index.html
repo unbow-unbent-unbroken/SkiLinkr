@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/animate.css">
     <link rel="icon" href="images/171454_link_icon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -22,10 +23,11 @@
         </div>
     </header>
     <div class="container1">
-        <div class="headline">Bridging the gap between talent and opportunity!</div>
+        <div id="animatedHeadline" class="headline">Bridging the gap between talent and opportunity!</div>
         <div class="search-bar">
             <input type="text" placeholder="Search">
             <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
         </div>
     </div>
     <div class="divider"></div>
@@ -94,8 +96,7 @@
             </div>
 
             <div class="button">
-                <button type="button" id="signupBtn">Join us</button>
-                <button type="button" id="loginBtn">Login</button>
+                <button type="button" id="joinusBtn">Join us</button>
             </div>
 
         </div>
@@ -151,11 +152,16 @@
             <input type="password" id="newPassword" name="newPassword" required>
             <button type="submit">Signup</button>
         </form>
+        <div class="social-signup">
+            <button id="googleSignupBtn" class="social-btn google-btn"><i class="fa fa-google">Signup with Google</i></button>
+            <button id="facebookSignupBtn" class="social-btn facebook-btn"><i class="fa fa-facebook">Signup with Facebook</i></button>
+        </div>
     </div>
 </div>
 
     <script src="scripts/main.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/animate.js"></script>
 </body>
 <footer>
     <div class="footer-content">

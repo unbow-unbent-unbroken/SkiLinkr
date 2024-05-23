@@ -71,3 +71,41 @@
 .modal-content button:hover {
     background-color: #5f5e5e;
 }
+
+/* Social Signup styles */
+.social-signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-btn {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.google-btn {
+    background-color: #db4437;
+}
+
+.google-btn:hover {
+    background-color: #c33c2f;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+}
+
+.facebook-btn:hover {
+    background-color: #2e477a;
+}
+
+.social-btn i {
+    margin-right: 10px;
+}
